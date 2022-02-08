@@ -6,7 +6,7 @@
   padding: 0 0 0 3rem;
 }
 
-.feature h3 {
+.feature h2 {
   color: #fff;
   font-size: 3.6rem;
   font-weight: 500;
@@ -20,16 +20,13 @@
   padding-bottom: 1rem;
 }
 
-.feature button {
-  background-color: #A5AFD4;
+.feature a {
+  font-family: "Open Sans";
+  background-color:#A5AFD4;
   color: #fff;
   border-radius: 100px;
-}
-
-.feature a {
-  color: #fff;
   text-decoration: none;
-  padding: 0 13px;
+  padding: 5px 20px;
   font-size: 1.5rem;
   font-weight: 500;
 }
