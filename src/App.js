@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { getLCP, getFID, getCLS } from 'web-vitals';
-import { GridWrap, GridRow, GridColumn } from 'emotion-flex-grid';
+
 import Main from './components/Main';
 import Features from './components/Features';
 

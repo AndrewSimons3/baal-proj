@@ -1,0 +1,38 @@
+.feature {
+  width: 350px;
+  height: 225px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  background: #181818;
+}
+
+.feature h3 {
+  color: #fff;
+  font-size: 3.6rem;
+  font-weight: 500;
+}
+
+.feature p {
+  font-family: "Open Sans";
+  color: #fff;
+  font-size: 1.6rem;
+  opacity: 0.6;
+  padding-bottom: 1rem;
+}
+
+.feature button {
+  background-color: #A5AFD4;
+  color: #fff;
+  border-radius: 100px;
+}
+
+.feature a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 13px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}

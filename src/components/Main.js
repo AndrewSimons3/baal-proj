@@ -12,24 +12,26 @@ const Main = () => {
 	return (
 		<div className={classes.wrapper}>
 			<div className={classes['content-container']}>
-				<div className={classes['nav-container']}>
-					<img src={logo} />
-					<div className={classes['logo-title']}>Cardo</div>
-					<ul>
-						<li>Deposit</li>
-						<li>Dashboard</li>
-						<li>Company</li>
-						<li>Pricing</li>
-					</ul>
-				</div>
+				<header>
+					<div className={classes['nav-container']}>
+						<img src={logo} alt='logo' />
+						<div className={classes['logo-title']}>Cardo</div>
+						<ul>
+							<li>Deposit</li>
+							<li>Dashboard</li>
+							<li>Company</li>
+							<li>Pricing</li>
+						</ul>
+					</div>
+				</header>
 
 				<div className={classes['main-container']}>
-					<img className={classes.flower} src={flower} />
+					<img className={classes.flower} src={flower} alt='flower' />
 					<h1 className={classes.title}>
 						All the <strong>experience</strong> <br />
 						in the new credit card
 					</h1>
-					<img className={classes.arrow} src={arrow} />
+					<img className={classes.arrow} src={arrow} alt='arrow' />
 					<p className={classes.summary}>
 						Simple transfers, payments for utilities, functional statemement,
 						card settings, for which you used to have to go too the brach
@@ -37,19 +39,19 @@ const Main = () => {
 					</p>
 					<div className={classes['btn-container']}>
 						<button className={classes.btn}>Order a card</button>
-						<button className={classes['btn-secondary']}>How it works ></button>
+						<button className={classes['btn-secondary']}>How it works </button>
 					</div>
 					<div className={classes['active-bar']}>
 						<div className={classes['bar-section']}>
-							<h3>Active Users</h3>
+							<h2>Active Users</h2>
 							<p>5000+</p>
 						</div>
 						<div className={classes['bar-section']}>
-							<h3>Download</h3>
+							<h2>Download</h2>
 							<p>30.3k</p>
 						</div>
 						<div className={classes['bar-section']}>
-							<h3>Reviews</h3>
+							<h2>Reviews</h2>
 							<p>1200+</p>
 						</div>
 					</div>
@@ -60,12 +62,20 @@ const Main = () => {
 				<div className={classes['credit-card']}>
 					<div className={classes['top-row']}>
 						<div className={classes.col1}>
-							<img className={classes['icon-1']} src={logo} />
+							<img className={classes['icon-1']} src={logo} alt='cardo logo' />
 							<h3>Cardo</h3>
 						</div>
 						<div className={classes.col2}>
-							<img className={classes['icon-2']} src={icon2} />
-							<img className={classes['icon-3']} src={icon3} />
+							<img
+								className={classes['icon-2']}
+								src={icon2}
+								alt='bottom icon'
+							/>
+							<img
+								className={classes['icon-3']}
+								src={icon3}
+								alt='bottom left icon'
+							/>
 						</div>
 					</div>
 					<div className={classes.name}>
@@ -73,7 +83,7 @@ const Main = () => {
 							Mauricio Lopez <br />
 							5678
 						</p>
-						<img className src={icon4} />
+						<img src={icon4} alt='bottom right icon' />
 					</div>
 				</div>
 			</div>
