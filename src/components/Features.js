@@ -19,18 +19,19 @@ const Features = () => {
 				throw new Error('Something went wrong!');
 			}
 
-			const responseData = await response.json();
-			setFeatures(responseData);
+      const responseData = await response.json();
+      const slicedData = responseData.slice(0, 6);
+			setFeatures(slicedData);
 
 			const loadedFeatures = [];
 
-			for (const key in responseData) {
+			for (const key in slicedData) {
 				loadedFeatures.push({
 					id: key,
-					title: responseData[key].title,
-					description: responseData[key].description,
-					text: responseData[key].button.text,
-					link: responseData[key].button.link,
+					title: slicedData[key].title,
+					description: slicedData[key].description,
+					text: slicedData[key].button.text,
+					link: slicedData[key].button.link,
 				});
 			}
 			setFeatures(loadedFeatures);
