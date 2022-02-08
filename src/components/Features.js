@@ -1,5 +1,5 @@
 import React from 'react';
-// import { GridWrap, GridRow, GridColumn } from 'emotion-flex-grid';
+import { GridWrap, GridRow, GridColumn } from 'emotion-flex-grid';
 import classes from './Features.module.css';
 // import FeatureItem from './FeatureItem';
 import Card from '../UI/Card';
@@ -49,18 +49,18 @@ const Features = () => {
 			text={feature.text}
 			link={feature.link}
 		/>
-  ));
+	));
 
-  console.log(featuresList)
+	console.log(featuresList);
 
 	return (
 		<section className={classes['features-wrapper']}>
 			<div className={classes['features-title']}>
 				<h1>Experience the Cardo</h1>
 			</div>
-			<Card>
-				<ul>{featuresList}</ul>
-			</Card>
+			<div className={classes['grid-container']}>
+				<GridRow wrap='wrap'>{featuresList}</GridRow>
+			</div>
 		</section>
 	);
 };
