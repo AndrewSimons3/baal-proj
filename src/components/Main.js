@@ -28,40 +28,45 @@ const Main = () => {
 						<MenuIcon fontSize='large' className={classes.burger} />
 					</div>
 				</header>
+				<main>
+					<div className={classes['main-container']}>
+						<img className={classes.flower} src={flower} alt='flower' />
+						<h1 className={classes.title}>
+							All the <strong>experience</strong> <br />
+							in the new credit card
+						</h1>
+						<img className={classes.arrow} src={arrow} alt='arrow' />
+						<p className={classes.summary}>
+							Simple transfers, payments for utilities, functional statemement,
+							card settings, for which you used to have to go too the brach
+							oonline-banking
+						</p>
 
-				<div className={classes['main-container']}>
-					<img className={classes.flower} src={flower} alt='flower' />
-					<h1 className={classes.title}>
-						All the <strong>experience</strong> <br />
-						in the new credit card
-					</h1>
-					<img className={classes.arrow} src={arrow} alt='arrow' />
-					<p className={classes.summary}>
-						Simple transfers, payments for utilities, functional statemement,
-						card settings, for which you used to have to go too the brach
-						oonline-banking
-					</p>
-					<div className={classes['btn-container']}>
-						<button className={classes.btn}>Order a card</button>
-						<button className={classes['btn-secondary']}>How it works </button>
-					</div>
-					<div className={classes['active-bar']}>
-						<div className={classes['bar-section']}>
-							<h2>Active Users</h2>
-							<p>5000+</p>
+						<div className={classes['btn-container']}>
+							<button className={classes.btn}>Order a card</button>
+							<button className={classes['btn-secondary']}>
+								How it works{' '}
+							</button>
 						</div>
-						<div className={classes['bar-section']}>
-							<h2>Download</h2>
-							<p>30.3k</p>
-						</div>
-						<div className={classes['bar-section']}>
-							<h2>Reviews</h2>
-							<p>1200+</p>
+						<div className={classes['active-bar']}>
+							<div className={classes['bar-section']}>
+								<h2>Active Users</h2>
+								<p>5000+</p>
+							</div>
+							<div className={classes['bar-section']}>
+								<h2>Download</h2>
+								<p>30.3k</p>
+							</div>
+							<div className={classes['bar-section']}>
+								<h2>Reviews</h2>
+								<p>1200+</p>
+							</div>
 						</div>
 					</div>
-				</div>
+				</main>
 			</div>
 
+      
 			<div className={classes['background-container']}>
 				<div className={classes['credit-card']}>
 					<div className={classes['top-row']}>
