@@ -192,21 +192,30 @@ h3 {
 	padding: 6rem 0 0 0;
 }
 
+.burger {
+	display: none !important;
+}
+
 @media (max-width: 756px) {
+	ul {
+		display: none;
+	}
 
-  ul {
-    display: none;
+  .burger {
+    display: inline-block !important;
+    margin-left: auto;
+    
   }
-  .background-container {
-    display: none;
-  }
-  .content-container {
-    max-width: 100%;
-    margin: 1rem 3rem;
-  }
+  
+	.background-container {
+		display: none;
+	}
+	.content-container {
+		max-width: 100%;
+		margin: 1rem 3rem;
+	}
 
-  .bar-section {
-    margin: 0 4% 0 0;
-  }
-
+	.bar-section {
+		margin: 0 4% 0 0;
+	}
 }

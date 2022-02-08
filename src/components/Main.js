@@ -1,4 +1,6 @@
 import React from 'react';
+import MenuIcon from '@mui/icons-material/Menu';
+// import CloseIcon from '@mui/icons-material/Close';
 import classes from './Main.module.css';
 import arrow from '../images/arrow.svg';
 import '@fontsource/plus-jakarta-sans';
@@ -9,6 +11,7 @@ import icon3 from '../images/icon3.svg';
 import icon4 from '../images/icon4.svg';
 
 const Main = () => {
+
 	return (
 		<div className={classes.wrapper}>
 			<div className={classes['content-container']}>
@@ -22,6 +25,7 @@ const Main = () => {
 							<li>Company</li>
 							<li>Pricing</li>
 						</ul>
+						<MenuIcon fontSize='large' className={classes.burger} />
 					</div>
 				</header>
 
